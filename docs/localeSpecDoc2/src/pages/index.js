@@ -206,7 +206,7 @@ const createINode = (selectedLocale) => {
     console.log("createINode!!", selectedLocale);
 }
 
-const Left = (props) => {
+const LeftList = (props) => {
   const objKeys = Object.keys(localelist);
   
   const onClickedItem = (e) => {
@@ -218,7 +218,7 @@ const Left = (props) => {
 
   return (
     <div style={{            
-            height:"800px",
+            height:"1000px",
             overflowY : 'scroll'
         }}
         >  
@@ -246,7 +246,7 @@ const Left = (props) => {
 */
 
 const IndexPage = () => (
-  <Layout Left={Left()} LocalePage={LocalePage()}>
+  <Layout LeftList={LeftList()} LocalePage={LocalePage()}>
   </Layout>
 )
 

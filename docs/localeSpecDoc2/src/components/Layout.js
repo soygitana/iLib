@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import "./layout.css"
 
-const Layout = ({children, Left, LocalePage}) => {
+const Layout = ({children, LeftList, LocalePage}) => {
   //const {children, Left, Right} = props;
   //console.log(props);
   const data = useStaticQuery(graphql`
@@ -38,7 +38,7 @@ const Layout = ({children, Left, LocalePage}) => {
         <table>
           <tbody>
           <tr>
-            <td width="40%">{Left}</td>
+            <td width="40%">{LeftList}</td>
             <td>{LocalePage}</td>
           </tr>
           </tbody>
